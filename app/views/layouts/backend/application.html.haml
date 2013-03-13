@@ -1,0 +1,43 @@
+!!!
+%html
+  %head
+    %title Simple Backend Example
+    = stylesheet_link_tag "backend"
+    = javascript_include_tag "backend"
+    = csrf_meta_tag
+  %body
+    .topbar
+      .fill
+        .container
+          = link_to "Simple Backend Example", backend_root_path, :class => "brand"
+          %ul.nav
+            %li.active= link_to "Home", "#"
+            %li= link_to "Products", backend_products_path
+            %li= link_to "Widgets", backend_widgets_path
+
+
+    .container
+      .content
+        .page-header
+          = yield :header
+        .row
+          - if flash[:alert]
+            .alert-message.error
+              %p= flash[:alert]
+          - if flash[:notice]
+            .alert-message.info
+              %p= flash[:notice]
+          .span10
+            = yield
+          .span4
+            = yield :sidebar
+            .block.notice
+              %h4 Simple Backend Example
+              %p This is an example of creating your own backend in Rails 3.1.
+              %p
+                Learn more about it on
+                = link_to "iain.nl", "http://iain.nl/backends-in-rails-3-1"
+                or find the source on
+                = link_to "github", "https://github.com/iain/simple-backend-example"
+      %footer
+        %p Copyright &copy; #{Time.now.year} Iain Hecker.

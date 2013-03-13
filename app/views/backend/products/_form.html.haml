@@ -1,0 +1,7 @@
+= simple_form_for resource, :wrapper => :inline do |f|
+  %fieldset
+    - attributes.each do |attr|
+      = f.input attr
+  .actions
+    = f.submit :class => "btn primary"
+    %button.btn{:type => "reset"} Cancel
