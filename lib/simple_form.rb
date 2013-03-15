@@ -1,4 +1,3 @@
-require 'simple_form'
 # Use this setup block to configure all options available in SimpleForm.
 SimpleForm.setup do |config|
   # Wrappers are used by the form builder to generate a
@@ -12,9 +11,9 @@ SimpleForm.setup do |config|
     b.use :html5
     b.use :placeholder
     b.use :label_input
-    b.use :error, :wrap_with => { :tag => :span, :class => 'help-inline' }
-    b.use :hint,  :wrap_with => { :tag => :p, :class => 'help-block' }
-  end
+    b.use :error, :wrap_with => { :tag => 'span', :class => 'help-inline' }
+    b.use :hint,  :wrap_with => { :tag => 'p', :class => 'help-block' }
+    end
   config.wrappers :default, :class => :input,
     :hint_class => :field_with_hint, :error_class => :field_with_errors do |b|
     ## Extensions enabled by default
@@ -56,7 +55,7 @@ SimpleForm.setup do |config|
   end
 
   # The default wrapper to be used by the FormBuilder.
-  config.default_wrapper = :default
+  config.default_wrapper = :inline
 
   # Define the way to render check boxes / radio buttons with labels.
   # Defaults to :nested for bootstrap config.
@@ -130,7 +129,7 @@ SimpleForm.setup do |config|
 
   # Custom wrappers for input types. This should be a hash containing an input
   # type as key and the wrapper that will be used for all inputs with specified type.
- # config.wrapper_mappings = { :string => :inline }
+  # config.wrapper_mappings = { :string => :prepend }
 
   # Default priority for time_zone inputs.
   # config.time_zone_priority = nil

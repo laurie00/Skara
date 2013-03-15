@@ -127,6 +127,7 @@ DEPENDENCIES
   kaminari
   mysql2
   rails (= 3.2.12)
+  responders
   sass-rails (~> 3.2.3)
   simple_form
   sqlite3
