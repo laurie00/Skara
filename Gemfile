@@ -26,6 +26,8 @@ gem 'jquery-rails'
 gem 'kaminari'
 gem 'has_scope'
 gem 'responders'
+gem 'ckeditor', :git => 'git://github.com/galetahub/ckeditor.git'
+gem 'paperclip'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

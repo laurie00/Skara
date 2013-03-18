@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/galetahub/ckeditor.git
+  revision: d317bd7aa06bc96ebdb3ee7eb9eaff1d51f1682c
+  specs:
+    ckeditor (4.0.2)
+      mime-types
+      orm_adapter
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -30,6 +38,10 @@ GEM
       multi_json (~> 1.0)
     arel (3.0.2)
     builder (3.0.4)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.1)
+      climate_control (>= 0.0.3, < 1.0)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -63,6 +75,13 @@ GEM
     mime-types (1.21)
     multi_json (1.6.1)
     mysql2 (0.3.11)
+    orm_adapter (0.4.0)
+    paperclip (3.0.4)
+      activemodel (>= 3.0.0)
+      activerecord (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      cocaine (>= 0.0.2)
+      mime-types
     polyglot (0.3.3)
     rack (1.4.5)
     rack-cache (1.2)
@@ -119,6 +138,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  ckeditor!
   coffee-rails (~> 3.2.1)
   haml
   has_scope
@@ -126,6 +146,7 @@ DEPENDENCIES
   jquery-rails
   kaminari
   mysql2
+  paperclip
   rails (= 3.2.12)
   responders
   sass-rails (~> 3.2.3)
