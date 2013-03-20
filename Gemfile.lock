@@ -1,10 +1,10 @@
 GIT
-  remote: git://github.com/galetahub/ckeditor.git
-  revision: d317bd7aa06bc96ebdb3ee7eb9eaff1d51f1682c
+  remote: git://github.com/anjlab/bootstrap-rails.git
+  revision: 9ebc6d6e1b88b74f2007ce91f0e0bf31897e178d
   specs:
-    ckeditor (4.0.2)
-      mime-types
-      orm_adapter
+    anjlab-bootstrap-rails (2.3.1.1)
+      railties (>= 3.0)
+      sass (>= 3.2)
 
 GEM
   remote: https://rubygems.org/
@@ -38,6 +38,12 @@ GEM
       multi_json (~> 1.0)
     arel (3.0.2)
     builder (3.0.4)
+    cells (3.8.8)
+      actionpack (>= 3.0)
+      railties (>= 3.0)
+    ckeditor (4.0.2)
+      mime-types
+      orm_adapter
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.1)
@@ -138,7 +144,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  ckeditor!
+  anjlab-bootstrap-rails!
+  cells
+  ckeditor
   coffee-rails (~> 3.2.1)
   haml
   has_scope

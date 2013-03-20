@@ -1,3 +1,40 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+/*
+ *= require frontend
+*/
+.widewidget{
+  height: 40%;
+  width: 100%;
+  overflow:hidden;
+}
+.midwidget{
+  height:100%;
+  width:60%;
+  background-color: rgba(255,255,255,.8);
+  float:left;
+  overflow:hidden;
+  padding:1em 1.6em;
+}
+.spacewidget{
+  height: 100%;
+  width:2%;
+  float:left;
+}
+.imwidget{
+  height:100%;
+  min-width:10%;
+  background-color: rgba(255,255,255,.8);
+  float:left;
+}
+.rightwidget{
+  height:100%;
+  min-width:10%;
+  clear:right;
+}
+.excerpt{
+  padding:1em 1em;
+  letter-spacing:1px;
+  font-style:italic;
+}

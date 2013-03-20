@@ -1,0 +1,11 @@
+.widewidget
+  - @spages.each do |spage|
+    .spacewidget
+    .spacewidget
+    .imwidget
+    .spacewidget
+    .midwidget
+      .headerbox
+        %h2= spage.title
+      .excerpt= spage.body.html_safe
+    .spacewidget

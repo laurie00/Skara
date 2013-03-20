@@ -1,8 +1,9 @@
-= simple_form_for [ :backend, resource ], :wrapper => :inline do |form|
+= simple_form_for [ :backend, resource ] do |form|
   %fieldset
     %legend Please your page title and content inluding images.
     = form.input :title
-    = form.input :body, :as => :ckeditor, :input_html => { :ckeditor => {:toolbar => 'Full'} }
+    
+    = form.input :body, :as => :ckeditor, :input_html => { :ckeditor => {:language => 'en'} }
   .actions
     = form.submit :class => "btn primary"
     %button.btn{:type => "reset"} Cancel

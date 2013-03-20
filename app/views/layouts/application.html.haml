@@ -6,10 +6,12 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
     = javascript_include_tag :ckeditor
+    %link(href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css')
   %body
     .top
       = yield :header
+    .spacer
     = yield
+    .spacer
     .bottom
       = full_title(yield(:title))
-

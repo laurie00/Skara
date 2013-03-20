@@ -1,4 +1,5 @@
 Skara::Application.routes.draw do
+
   mount Ckeditor::Engine => '/ckeditor'
 
   root to: "home#index"
@@ -10,6 +11,5 @@ Skara::Application.routes.draw do
     resources :widgets
     resources :static_pages
   end
-  get "*request_path"=>"backend/static_pages#render_page", :constraints=>lambda{|req| !req.path.match(/\.(png|jpg|css|js)$/)}
-  mount Ckeditor::Engine => "/ckeditor"
+  match ':title', :controller => 'viewer', :action => 'show'
 end

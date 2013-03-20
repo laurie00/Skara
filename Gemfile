@@ -20,14 +20,16 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-
+gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
+                              :git => 'git://github.com/anjlab/bootstrap-rails.git'
 gem 'simple_form'
 gem 'jquery-rails'
 gem 'kaminari'
 gem 'has_scope'
 gem 'responders'
-gem 'ckeditor', :git => 'git://github.com/galetahub/ckeditor.git'
 gem 'paperclip'
+gem 'ckeditor'
+gem 'cells'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
