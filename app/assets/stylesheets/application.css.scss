@@ -39,31 +39,31 @@ body{
 	bottom:0px;
 	overflow:hidden;
 }
-.contentainer{
-	height: 80%;
-	border: 0px;
-	padding-top: 20%;
-}
 .spacer{
-	height:5%;
+  height:5%;
 }
 .mainnav{
 	margin-left: 0;
 	padding-left: 0;
 	width:100%;
-	margin:0px 8%;
-	padding: 0;
+	margin:0px;
+	padding:0px 8%;
 	float:left;
 }
 .mainnav li{
 	margin-left: 0;
-	padding: 3px 15px;
 	list-style: none;
 	float:left;
-	width:12%;
-  	white-space:nowrap;
+	width:14%;
  }
-.mainnav span{
-	overflow: hidden;
-	white-space:nowrap;
+.mainnav li a{
+  width:100%;
+  display:inline-block;
+  text-align:center;
+  margin-left:-1px;
+}
+.mainnav li span{
+  width:0px;
+  overflow:visible;
+  display:inline-block;
 }
