@@ -25,6 +25,7 @@ gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
 gem 'simple_form'
 gem 'jquery-rails'
 gem 'kaminari'
+gem "rails-backbone"
 gem 'has_scope'
 gem 'responders'
 gem 'paperclip'

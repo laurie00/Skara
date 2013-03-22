@@ -4,6 +4,8 @@
     = form.input :title
     
     = form.input :body, :as => :ckeditor, :input_html => { :ckeditor => {:language => 'en'} }
+    
+    = form.input :order,  :class => "input-mini"
   .actions
     = form.submit :class => "btn primary"
     %button.btn{:type => "reset"} Cancel

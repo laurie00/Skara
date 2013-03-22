@@ -1,5 +1,6 @@
 .widewidget
-  - @spages.each do |spage|
+  - @cellpages.each do |spage|
+  
     .spacewidget
     .spacewidget
     .imwidget
@@ -7,7 +8,7 @@
     .midwidget
       .headerbox
         %h2= spage.title
-      .excerpt= spage.body.html_safe
+      .excerpt= spage.body.gsub(/<img[^>]+>/ ,'').html_safe
 .spacer
 .logonav
 .spacer
