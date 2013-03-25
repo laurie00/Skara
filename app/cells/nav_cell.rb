@@ -1,7 +1,7 @@
 class NavCell < Cell::Rails
 
   def justifiedList
-    @cellpages = StaticPage.oldest_to_new
+    @navpages = StaticPage.nav1
     render
   end
   

@@ -1,4 +1,5 @@
-%h1
-  Nav#justifiedList
-%p
-  Find me in app/cells/nav/justifiedList.html.haml
+%ul.mainnav
+  - @navpages.each do |lin|
+    %li
+      = link_to lin.title, title_path(lin.title)
+      %span &#124;
