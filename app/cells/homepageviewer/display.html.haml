@@ -1,14 +1,4 @@
-.widewidget
-  - @cellpages.each do |spage|
-  
-    .spacewidget
-    .spacewidget
-    .imwidget
-    .spacewidget
-    .midwidget
-      .headerbox
-        %h2= spage.title
-      .excerpt= spage.body.gsub(/<img[^>]+>/ ,'').html_safe
 .spacer
 .logonav
+  = render_cell(:nav, :imageNav)
 .spacer

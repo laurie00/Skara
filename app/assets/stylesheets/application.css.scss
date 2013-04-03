@@ -58,12 +58,12 @@ body{
  }
 .mainnav li a{
   width:100%;
-  display:inline-block;
   text-align:center;
   margin-left:-1px;
+  float:left;
 }
 .mainnav li span{
-  width:0px;
+  width:1px;
   overflow:visible;
   display:inline-block;
 }

@@ -15,3 +15,8 @@
     .spacer
     .bottom
       = full_title(yield(:title))
+:javascript
+  $(function() {
+    window.router = new Skara.Routers.StaticPagesRouter({static_pages: #{@static_pages.to_json.html_safe}});
+    Backbone.history.start();
+  });

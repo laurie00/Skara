@@ -23,7 +23,7 @@
   float:left;
 }
 .imwidget{
-  height:100%;
+  height:auto;
   min-width:10%;
   background-color: rgba(255,255,255,.8);
   float:left;
@@ -43,4 +43,11 @@
   background-color: rgba(255,255,255,.8);
   float:left;
   width: 500px;
+  position:relative;
+}
+.logonav img{
+  height:90%;
+  max-height:80px;
+  width:auto;
+  margin:6px;
 }
