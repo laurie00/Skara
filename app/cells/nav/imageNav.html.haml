@@ -1,4 +1,4 @@
 %ul.imnav
   - @navpages2.each do |lin|
     %li
-      = link_to lin.body.html_safe, "/#" + title_path(lin.title)
+      = link_to lin.body.html_safe, title_path(lin.title.downcase)

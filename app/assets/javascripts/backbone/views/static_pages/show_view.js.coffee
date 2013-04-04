@@ -1,6 +1,6 @@
 class Skara.Views.StaticPagesShowView extends Backbone.View
 
-  el: '.widewidget'
+  el: '.content'
 
   template: JST["backbone/templates/static_pages/show"]
 
@@ -14,7 +14,9 @@ class Skara.Views.StaticPagesShowView extends Backbone.View
   addOne: (model) ->
     @view = new Skara.Views.StaticPagesView({model: model})
     @$el.find('.midwidget').append @view.render().el
+    @console.log "fart"
 
   render: ->
     @$el.html @template()
+    console.log @template()
     @

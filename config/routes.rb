@@ -9,7 +9,7 @@ Skara::Application.routes.draw do
       post :deactivate_widgets
     end
     resources :widgets
-    resources :static_pages
+    resources :static_pages, path: "", only: :show
   end
   match ':title', :controller => 'viewer', :action => 'show', :as => :title
 #  end
