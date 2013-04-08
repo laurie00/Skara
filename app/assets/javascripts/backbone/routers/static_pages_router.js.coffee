@@ -6,9 +6,11 @@ class Skara.Routers.StaticPagesRouter extends Backbone.Router
   
   routes:
     ":title" : "show"
+    "": "home"
     
   show: (title) ->
-    static_page = @static_pages.get(title)
-    alert static_page
-    @view = new Skara.Views.StaticPagesShowView {collection: @static_pages}
+    page = @static_pages.byTitle(title)
+    @view = new Skara.Views.StaticPagesShowView {model: page}
     
+  home: ->
+    @view = new Skara.Views.StaticPagesHomeView

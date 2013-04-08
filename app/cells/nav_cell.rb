@@ -7,7 +7,7 @@ class NavCell < Cell::Rails
   
   def imageNav
     @navpages2 = StaticPage.nav2.each { |img|
-      img.body = image_grab(img)
+      img["image"] = image_grab(img)
     }
     render
   end

@@ -1,4 +1,12 @@
 .spacer
+.widewidget
+.spacer
 .logonav
   = render_cell(:nav, :imageNav)
 .spacer
+:javascript
+  $(function() {
+    erraticpages = #{@static_pages.to_json.html_safe};
+    window.router = new Skara.Routers.StaticPagesRouter({static_pages: erraticpages});
+    Backbone.history.start({pushState: true, silent: false});
+  });

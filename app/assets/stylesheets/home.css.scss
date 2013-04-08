@@ -28,10 +28,11 @@
   background-color: rgba(255,255,255,.8);
   float:left;
 }
-.rightwidget{
+.next{
   height:100%;
-  min-width:10%;
-  clear:right;
+  width:6%;
+  float:left;
+  background-color: rgba(255,255,255,.8);
 }
 .excerpt{
   padding:1em 1em;
@@ -44,6 +45,12 @@
   float:left;
   width: 500px;
   position:relative;
+}
+.imnav li{
+  width:80px;
+  background-color:#333;
+  overflow:hidden;
+  float:left;
 }
 .logonav img{
   height:90%;
