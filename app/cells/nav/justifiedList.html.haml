@@ -1,5 +1,8 @@
 %ul.mainnav
-  - @navpages.each do |lin|
+  - @navpages.each_with_index do |lin, i|
+    - next_value = @navpages[i+1].blank? ? 0 : 1
     %li
-      = link_to lin.title, title_path(lin.title)
-      %span &#124;
+      = link_to lin.title.downcase, title_path(lin.title.downcase)
+      - if next_value == 1
+        %span &#124;
+      - else

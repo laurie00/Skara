@@ -6,11 +6,10 @@
 development:
   adapter: mysql2
   encoding: utf8
-  database: skara
-  pool: 5
-  username: root
-  password: molefire
-  socket: /tmp/mysql.sock
+  database: connect2furniture
+  username: connect2
+  password: gianne2
+  host: mysql5db-1.gradwell.net
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -18,17 +17,15 @@ development:
 test:
   adapter: mysql2
   encoding: utf8
-  database: skara
-  pool: 5
-  username: root
-  password: molefire
-  socket: /tmp/mysql.sock
+  database: connect2furniture
+  username: connect2
+  password: gianne2
+  host: mysql5db-1.gradwell.net
 
 production:
   adapter: mysql2
   encoding: utf8
-  database: skara
-  pool: 5
-  username: root
-  password: molefire
-  socket: /tmp/mysql.sock
+  database: connect2furniture
+  username: connect2
+  password: gianne2
+  host: mysql5db-1.gradwell.net
