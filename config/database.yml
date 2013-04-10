@@ -17,10 +17,11 @@ development:
 test:
   adapter: mysql2
   encoding: utf8
-  database: connect2furniture
-  username: connect2
-  password: gianne2
-  host: mysql5db-1.gradwell.net
+  database: skara
+  pool: 5
+  username: root
+  password: molefire
+  socket: /tmp/mysql.sock
 
 production:
   adapter: mysql2

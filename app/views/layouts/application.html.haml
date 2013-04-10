@@ -15,4 +15,8 @@
     .spacer{:id => "after"}
     .bottom
       = full_title(yield(:title))
+      - if current_page?(root_url)
+        .logonav
+          = render_cell(:nav, :imageNav)
+          .dummy
 
