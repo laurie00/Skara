@@ -21,7 +21,7 @@ $(document).on "click", "a[href^='/']", (event) ->
   href = $(event.currentTarget).attr('href')
   
   # chain 'or's for other black list routes
-  passThrough = href.indexOf('design') >= 0 or href.indexOf('products') >= 0 or href.indexOf('furniture') >= 0 or href.indexOf('interiors') >= 0
+  passThrough = $(event.currentTarget).attr('class') == "pass" ? false : true
   
   # Allow shift+click for new tabs, etc.
   if !passThrough && !event.altKey && !event.ctrlKey && !event.metaKey && !event.shiftKey

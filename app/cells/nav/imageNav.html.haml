@@ -1,4 +1,5 @@
 %ul.imnav
   - @navpages2.each do |lin|
     %li
+      .dummy
       = link_to lin.image.html_safe, title_path(lin.title.downcase)

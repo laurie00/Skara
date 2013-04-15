@@ -15,5 +15,5 @@ class StaticPage < ActiveRecord::Base
 end
 def image_grab(pagehash)
   redux = pagehash.body
-  return "<div style='background:url(" + redux.scan(/src="([^<>]*)" s/).flatten.join + "); background-size:cover;'></div>"
+  return "<div class='image' style='background:url(" + redux.scan(/src="([^<>]*)" s/).flatten.join + "); background-size:cover;'></div>"
 end

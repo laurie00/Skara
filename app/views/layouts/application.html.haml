@@ -10,13 +10,13 @@
   %body
     .top
       = render_cell(:nav, :justifiedList)
-    .spacer
     = yield
-    .spacer{:id => "after"}
     .bottom
-      = full_title(yield(:title))
-      - if current_page?(root_url)
+      .lnc
         .logonav
-          = render_cell(:nav, :imageNav)
-          .dummy
-
+          .hltitle
+          - if current_page?(root_url)
+            = render_cell(:nav, :imageNav)
+            = link_to full_title(yield(:title)), root_path
+          - else
+            = link_to full_title(yield(:title)), root_path, {:class => 'pass'}

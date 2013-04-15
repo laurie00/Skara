@@ -26,6 +26,7 @@ body{
 }
 .top{
 	height:5%;
+	min-height:20px;
 	width:100%;
 	top:0px;
 	background-color: #fff;
@@ -42,6 +43,9 @@ body{
 }
 .spacer{
   height:5%;
+  width:100%;
+  display:block;
+  clear:both;
 }
 .mainnav{
 	margin-left: 0;
@@ -72,4 +76,35 @@ body{
   width:100%;
   height:100%;
   display:block;
+}
+.logonav{
+  -moz-transform: scale(1.6);
+  -webkit-transform: scale(1.6);
+  -o-transform: scale(1.6);
+  -moz-transform-origin: right bottom;
+  -webkit-transform-origin: right bottom;
+  -o-transform-origin: right bottom;
+  background-color: #fff;
+  float:right;
+  width: 100%;
+  position:relative;
+  overflow:visible;
+  height:100%;
+  clear:both;
+}
+.lnc{
+  width: 20%;
+  min-width:200px;
+  position:absolute;
+  height:100%;
+  display:block;
+  bottom:98%;
+  right:0px;
+}
+.botspace{
+  height:100%;
+  width:100%;
+  display:block;
+  position:relative;
+  clear:both;
 }

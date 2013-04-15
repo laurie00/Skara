@@ -4,17 +4,30 @@
 /*
  *= require frontend
 */
+.main{
+  width:50%;
+  height:86%;
+  float:left;
+}
+.righttop, .rightbot{
+  width:50%;
+  display:block;
+  height:43%;
+  float:right;
+}
 .widewidget{
-  height: 40%;
+  height: 100%;
   width: 100%;
-  overflow:hidden;
+  display:block;
+  position:relative;
 }
 .midwidget{
-  height:100%;
-  width:60%;
+  height:75%;
+  width:90%;
+  margin:0% 5%;
   background-color: rgba(255,255,255,.8);
   float:left;
-  overflow:hidden;
+  overflow:auto;
   padding:1em 1.6em;
 }
 .spacewidget{
@@ -25,13 +38,18 @@
 .imwidget{
   height:auto;
   min-width:10%;
+  width:20%;
   background-color: rgba(255,255,255,.8);
   float:left;
+  position: relative;
+  display:100%;
 }
 .next{
-  height:100%;
-  width:6%;
-  float:left;
+  height:10%;
+  width:90%;
+  margin-left:5%;
+  display:block;
+  clear:both;
   background-color: rgba(255,255,255,.8);
 }
 .excerpt{
@@ -39,39 +57,38 @@
   letter-spacing:1px;
   font-style:italic;
 }
-.logonav{
-  -moz-transform: scale(1.6);
-  -webkit-transform: scale(1.6);
-  -o-transform: scale(1.6);
-  -moz-transform-origin: right bottom;
-  -webkit-transform-origin: right bottom;
-  -o-transform-origin: right bottom;
-  background-color: #fff;
-  margin-bottom:0px;
-  float:right;
-  width: 30%;
-  margin-top: -8%;
-  position:relative;
-  overflow:hidden;
-}
-.dummy {
-    margin-top: 30%; /* 4:3 aspect ratio */
+.dummy{
+ margin-top:100%; /* 4:3 aspect ratio */
 }
 .imnav{
   width:62%;
   float:right;
   height:100%;
+  display:block;
+}
+.hltitle{
+  width:36%;
+  overflow:hidden;
+  float:left;
 }
 .imnav li{
   width:33%;
   overflow:hidden;
   float:left;
-  height:100%;
-  display:block;
+  display:inline-block;
+  position:relative;
 }
-.imnav div{
+.imnav li a{
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.image{
   margin:5%;
   height:90%;
   width:90%;
   display: block;
 }
+
