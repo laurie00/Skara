@@ -6,6 +6,5 @@ module Backend
       product.deactivate_widgets
       redirect_to resource_path(product), notice: "All widgets were sadly deactivated"
     end
-
   end
 end

@@ -2,7 +2,7 @@
   - @navpages.each_with_index do |lin, i|
     - next_value = @navpages[i+1].blank? ? 0 : 1
     %li
-      = link_to lin.title.downcase, title_path(lin.title.downcase)
+      = link_to lin.title.downcase, title_path(lin.title.downcase), { :class=>"pass" }
       - if next_value == 1
         %span &#124;
       - else

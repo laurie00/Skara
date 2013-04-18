@@ -1,1 +1,3 @@
 = @page.body.html_safe
+- if @rubes != []
+  = render_cell @rubes[0], @rubes[1]

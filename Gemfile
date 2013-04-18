@@ -24,13 +24,13 @@ gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
                               :git => 'git://github.com/anjlab/bootstrap-rails.git'
 gem 'simple_form'
 gem 'jquery-rails'
-gem 'kaminari'
 gem "rails-backbone"
 gem 'has_scope'
 gem 'responders'
 gem 'paperclip'
 gem 'ckeditor'
 gem 'cells'
+gem 'will_paginate'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
