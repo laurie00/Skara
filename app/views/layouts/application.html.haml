@@ -15,8 +15,9 @@
       .lnc
         .logonav
           .hltitle
-          - if current_page?(root_url)
+          - if current_page?(root_url || title_url("about"))
             = render_cell(:nav, :imageNav)
             = link_to full_title(yield(:title)), root_path
+            = title_url("about")
           - else
             = link_to full_title(yield(:title)), root_path, {:class => 'pass'}

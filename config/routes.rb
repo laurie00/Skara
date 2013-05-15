@@ -11,7 +11,8 @@ Skara::Application.routes.draw do
     resources :widgets
     resources :static_pages
   end
-  match ':title', :controller => 'viewer', :action => 'show', :as => :title
+  match ':title' => "home#index"
+#  match ':title', :controller => 'viewer', :action => 'show', :as => :title
 #  end
 #  match ':posttitle', :controller => 'blog', :action => 'show'
 #  match '', :controller => '', :action => ''

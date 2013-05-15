@@ -13,19 +13,18 @@
 //= require backbone/skara
 //= require_tree .
 function debouncer( func , timeout ) {
-var timeoutID , timeout = timeout || 200;
-return function () {
-var scope = this , args = arguments;
-clearTimeout( timeoutID );
-timeoutID = setTimeout( function () {
-func.apply( scope , Array.prototype.slice.call( args ) );
-} , timeout );
+	var timeoutID , timeout = timeout || 200;
+	return function () {
+		var scope = this , args = arguments;
+		clearTimeout( timeoutID );
+		timeoutID = setTimeout( function () {
+			func.apply( scope , Array.prototype.slice.call( args ) );
+		} , timeout );
+	}
 }
-}
- 
- 
+
 $( window ).bind("load resize", debouncer( function ( e ) {
 	var li_width = $('.mainnav > li:first').width()
 	var lis = $('.mainnav > li > a')
 	lis.css("letter-spacing", li_width/12 - 10)
-	} ) );
+} ) );
